@@ -14,6 +14,25 @@ $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 # Inherit from pipa device
 $(call inherit-product, device/xiaomi/pipa/device.mk)
 
+# Flags
+TARGET_ENABLE_BLUR := false
+TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+MATRIXX_BUILD_TYPE := Official
+MATRIXX_MAINTAINER := ARIJIT-SAHA
+MATRIXX_CHIPSET := SM8250
+MATRIXX_BATTERY := 8840mAh
+MATRIXX_DISPLAY := 1800x2880
+
+# Gapps
+WITH_GMS := true
+EXTRA_GAPPS := false
+
+# Charging Animation
+TARGET_USE_PIXEL_CHARGER := true
+
 PRODUCT_NAME := lineage_pipa
 PRODUCT_DEVICE := pipa
 PRODUCT_MANUFACTURER := Xiaomi
