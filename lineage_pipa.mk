@@ -8,7 +8,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit some common lineage stuff.
+# Inherit some common EvolutionX stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Inherit from pipa device
@@ -20,15 +20,11 @@ TARGET_SUPPORTS_QUICK_TAP := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
-MATRIXX_BUILD_TYPE := Official
-MATRIXX_MAINTAINER := ARIJIT-SAHA
-MATRIXX_CHIPSET := SM8250
-MATRIXX_BATTERY := 8840mAh
-MATRIXX_DISPLAY := 1800x2880
+EVO_BUILD_TYPE := Unofficial
+ARGET_BUILD_APERTURE_CAMERA := false
 
 # Gapps
 WITH_GMS := true
-EXTRA_GAPPS := false
 
 # Charging Animation
 TARGET_USE_PIXEL_CHARGER := true
